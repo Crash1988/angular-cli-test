@@ -22,7 +22,7 @@ export class HeroDetailComponent implements OnInit {
     this.heroForm = this.fb.group({ // <-- the parent FormGroup
       name: ['', Validators.compose([
         Validators.required, 
-        Validators.maxLength(10),
+        //Validators.maxLength(10),
         Validators.minLength(4)
       ])],
       email: ['', Validators.compose([

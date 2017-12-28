@@ -21,6 +21,10 @@
     border-radius: 4px;
 }
 
+.btn:active {
+    box-shadow: none!important;
+}
+
 .nav-menu-item {
     padding-right: 0;
     padding-left: 0;

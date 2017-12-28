@@ -17,6 +17,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component'; 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AnimationComponent } from './animation/animation.component';
+import { CounterComponent } from './counter/counter.component';
+import { SharedService } from './service/shared.service';
+
 
 
 @NgModule({
@@ -27,7 +30,8 @@ import { AnimationComponent } from './animation/animation.component';
     HomeComponent,
     NavbarComponent,
     AboutComponent,
-    AnimationComponent
+    AnimationComponent,
+    CounterComponent,
   ],
   imports: [
     AlertModule.forRoot(),
@@ -43,11 +47,12 @@ import { AnimationComponent } from './animation/animation.component';
       { path: 'hero', component: HeroDetailComponent },
       { path: 'about', component: AboutComponent },
       { path: 'animation', component: AnimationComponent },
+      { path: 'counter', component: CounterComponent },
       { path: 'navbar', component: NavbarComponent },
       { path: '**', redirectTo: 'home' }
   ])
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

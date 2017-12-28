@@ -51,7 +51,8 @@ export class HeroDetailComponent implements OnInit {
   }
 
   clicked(){    
-    console.log(this.heroForm.controls.address);
+    //console.log(this.heroForm.controls.address);
+    this.heroForm.reset();
 
   }
   validPassword(control: AbstractControl) {            

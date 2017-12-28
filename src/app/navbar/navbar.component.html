@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="navbar-header">
+            <div dropdown>
+                <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false" dropdownToggle> 
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <ul *dropdownMenu class="  dropdown-menu navbar-right" role="menu" style="float: right; right: 1px;">
+                    <li role="menuitem"><a class="dropdown-item" style="text-align: left; margin-left:10%; color: #337ab7" [routerLink]="'home'">Home</a></li>
+                    <li class="divider dropdown-divider"></li>
+                    <li role="menuitem"><a class="dropdown-item" style="text-align: left; margin-left:10%; color: #337ab7" [routerLink]="'animation'">Animation</a></li>
+                    <li role="menuitem"><a class="dropdown-item" style="text-align: left; margin-left:10%; color: #337ab7" [routerLink]="'hero'">Hero</a></li>
+                    <li role="menuitem"><a class="dropdown-item" style="text-align: left; margin-left:10%; color: #337ab7" [routerLink]="'about'">About</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="navbar-brand">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul>
+                <li class="nav-menu-li"><a class="btn nav-menu-item" [routerLink]="'home'">Home</a></li>
+                <li class="nav-menu-li"><span class="nav-menu-item">|</span></li>
+                <li class="nav-menu-li"><a class="btn nav-menu-item" [routerLink]="'animation'">Animation</a></li>
+                <li class="nav-menu-li"><span class="nav-menu-item">|</span></li>
+                <li class="nav-menu-li"><a class="btn nav-menu-item" [routerLink]="'hero'">Hero</a></li>
+                <li class="nav-menu-li"><span class="nav-menu-item">|</span></li>
+                <li class="nav-menu-li"><a class="btn nav-menu-item" [routerLink]="'about'">About</a></li>
+            </ul>
+        </div>
+
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

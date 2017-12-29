@@ -13,11 +13,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         trigger('flyInOut', [
           state('in', style({transform: 'translateX(0) skewX(0)'})),
           transition('void => *', [
-            style({transform: 'translateX(500px) skewX(50deg)'}),
-            animate(500)
+            style({transform: 'translateX(100%) skewX(50deg)'}),
+            animate(700)
           ]),
           transition('* => void', [
-            animate(500, style({transform: 'translatex(-500px) skewX(50deg)'}))
+            animate(500, style({transform: 'translatex(-100%) skewX(50deg)'}))
           ])
         ])
     ]

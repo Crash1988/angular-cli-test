@@ -11,13 +11,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     styleUrls: ['./multiForm.component.css'],
     animations: [
         trigger('flyInOut', [
-          state('in', style({transform: 'translateX(0) rotate(0deg)'})),
+          state('in', style({transform: 'translateX(0) skewX(0)'})),
           transition('void => *', [
-            style({transform: 'translateX(50%) rotate(360deg)'}),
-            animate(400)
+            style({transform: 'translateX(500px) skewX(50deg)'}),
+            animate(500)
           ]),
           transition('* => void', [
-            animate(400, style({transform: 'translateX(-50%) rotate(360deg)'}))
+            animate(500, style({transform: 'translatex(-500px) skewX(50deg)'}))
           ])
         ])
     ]

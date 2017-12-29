@@ -6,7 +6,7 @@ import {FormGroup, NgForm} from '@angular/forms';
 @Component({
     selector: 'step1',
     templateUrl: './step1.component.html',
-    styleUrls: ['./step1.component.css']
+    styleUrls: ['./step1.component.css', '../multiform.component.css']
 })
 export class Step1Component {
     name:string;

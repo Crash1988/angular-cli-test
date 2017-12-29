@@ -19,6 +19,13 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AnimationComponent } from './animation/animation.component';
 import { CounterComponent } from './counter/counter.component';
 import { SharedService } from './service/shared.service';
+import { HeroService } from './service/hero.service';
+import { HeroListBasicComponent } from './animation/hero-list-basic/hero-list-basic.component';
+import {MultiFormComponent} from './multiform/multiForm.component';
+import {Step1Component} from './multiform/step1/step1.component';
+import {Step2Component} from './multiform/step2/step2.component';
+import {Step3Component} from './multiform/step3/step3.component';
+
 
 
 
@@ -32,6 +39,11 @@ import { SharedService } from './service/shared.service';
     AboutComponent,
     AnimationComponent,
     CounterComponent,
+    HeroListBasicComponent,
+    MultiFormComponent,
+    Step1Component,
+    Step2Component,
+    Step3Component,
   ],
   imports: [
     AlertModule.forRoot(),
@@ -48,11 +60,12 @@ import { SharedService } from './service/shared.service';
       { path: 'about', component: AboutComponent },
       { path: 'animation', component: AnimationComponent },
       { path: 'counter', component: CounterComponent },
+      { path: 'multiform', component: MultiFormComponent },
       { path: 'navbar', component: NavbarComponent },
       { path: '**', redirectTo: 'home' }
   ])
   ],
-  providers: [SharedService],
+  providers: [SharedService, HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

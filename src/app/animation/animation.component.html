@@ -1,0 +1,13 @@
+<div class="row" style="margin-left: 10px;">
+    <div class=" col-md-12">
+        <h2>List Of Heroes</h2>
+    </div>
+    <div class=" col-md-12">
+        <button [disabled]="!heroService.canAdd()" (click)="heroService.addInactive()">Add inactive hero</button>
+        <button [disabled]="!heroService.canAdd()" (click)="heroService.addActive()">Add active hero</button>
+        <button [disabled]="!heroService.canRemove()" (click)="heroService.remove()">Remove hero</button>
+    </div>
+    <div class=" col-md-12">
+        <app-hero-list-basic [heroes]="heroes"></app-hero-list-basic>
+    </div>
+</div>

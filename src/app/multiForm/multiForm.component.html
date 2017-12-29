@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div *ngIf="formViews.step1" [@flyInOut]="'in'">
+        <step1 (onNextView)="onNextView($event)">
+        </step1>
+    </div>
+    <div *ngIf="formViews.step2" [@flyInOut]="'in'">
+        <step2 (onNextView)="onNextView($event)">
+        </step2>
+    </div>
+    <div *ngIf="formViews.step3" [@flyInOut]="'in'">
+        <step3 (onNextView)="onNextView($event)">
+        </step3>
+    </div>
+</div>

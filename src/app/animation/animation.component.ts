@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HeroListBasicComponent} from './hero-list-basic/hero-list-basic.component'
+import {Hero, HeroService} from '../service/hero.service'
 
 @Component({
   selector: 'app-animation',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnimationComponent implements OnInit {
  
-  constructor() { }
-
+  heroes: Hero[];
+  constructor(private heroService: HeroService) {
+    this.heroes = heroService.heroes;   
+  }
   ngOnInit() {
+        
   }
 
 }

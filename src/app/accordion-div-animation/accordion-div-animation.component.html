@@ -1,0 +1,20 @@
+<div class="wrapper scrollableDiv">
+    <div [@expand]="expandState1" (click)="toggleShowDiv('div1')" class="content divA" style="overflow:hidden;">
+        <h2>THIS IS CONTENT DIV 1</h2>
+        <p>THIS IS CONTENT DIV 1</p>
+        <p>THIS IS CONTENT DIV 1</p>
+        <p>THIS IS CONTENT DIV 1</p>
+        <p>THIS IS CONTENT DIV 1</p>
+    </div>
+    <div [@expand]="expandState2" (click)="toggleShowDiv('div2')" class="divA" style="overflow:hidden;">
+        <h2>THIS IS CONTENT DIV 2</h2>
+        <p>THIS IS CONTENT DIV 1</p>
+        <p>THIS IS CONTENT DIV 1</p>
+        <p>THIS IS CONTENT DIV 1</p>
+        <p>THIS IS CONTENT DIV 1</p>
+        <p>THIS IS CONTENT DIV 1</p>
+    </div>
+    <div [@expand]="expandState3" (click)="toggleShowDiv('div3')" class="content divA">THIS IS CONTENT DIV 3</div>
+    <div [@expand]="expandState4" (click)="toggleShowDiv('div4')" class="content divA">THIS IS CONTENT DIV 4</div>
+    <div [@expand]="expandState5" (click)="toggleShowDiv('div5')" class="content divA">THIS IS CONTENT DIV 5</div>
+</div>

@@ -25,6 +25,7 @@ import {MultiFormComponent} from './multiform/multiForm.component';
 import {Step1Component} from './multiform/step1/step1.component';
 import {Step2Component} from './multiform/step2/step2.component';
 import {Step3Component} from './multiform/step3/step3.component';
+import { AccordionDivAnimationComponent } from './accordion-div-animation/accordion-div-animation.component';
 
 
 
@@ -44,6 +45,7 @@ import {Step3Component} from './multiform/step3/step3.component';
     Step1Component,
     Step2Component,
     Step3Component,
+    AccordionDivAnimationComponent,
   ],
   imports: [
     AlertModule.forRoot(),
@@ -61,6 +63,7 @@ import {Step3Component} from './multiform/step3/step3.component';
       { path: 'animation', component: AnimationComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'multiform', component: MultiFormComponent },
+      { path: 'accordiondiv', component: AccordionDivAnimationComponent },
       { path: 'navbar', component: NavbarComponent },
       { path: '**', redirectTo: 'home' }
   ])

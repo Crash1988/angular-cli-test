@@ -23,7 +23,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ]
 })
 export class MultiFormComponent {
-    private formViews= {step1:true,step2:false,step3:false};
+    public formViews= {step1:true,step2:false,step3:false};
     
     constructor(){
 

@@ -7,7 +7,7 @@ import { SharedService } from './../service/shared.service';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  constructor(private _sharedService:SharedService) { }
+  constructor(public _sharedService:SharedService) { }
 
   ngOnInit() {
   }

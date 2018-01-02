@@ -10,7 +10,7 @@ import { SharedService } from './../service/shared.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router: Router, private _sharedService:SharedService  ) { }
+  constructor(private router: Router, public _sharedService:SharedService  ) { }
 
   ngOnInit() {
   }

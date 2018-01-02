@@ -10,7 +10,7 @@ import {Hero, HeroService} from '../service/hero.service'
 export class AnimationComponent implements OnInit {
  
   heroes: Hero[];
-  constructor(private heroService: HeroService) {
+  constructor(public heroService: HeroService) {
     this.heroes = heroService.heroes;   
   }
   ngOnInit() {

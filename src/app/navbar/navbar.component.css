@@ -39,3 +39,7 @@
     color: #337ab7;
     font-size: 22px;
 }
+
+.router-link-active {
+    color: red;
+}

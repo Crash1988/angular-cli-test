@@ -11,14 +11,27 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     styleUrls: ['./multiForm.component.css'],
     animations: [
         trigger('flyInOut', [
-          state('in', style({transform: 'translatey(0) '})),
+          state('in', style({
+              transform: 'translatey(0) ',
+              color:'black',
+            })),
           transition('void => *', [
-            style({transform: 'translatey(1000px) '}),
-            animate(300)
+            style({transform: 'translatey(94%) '}),
+            animate(400)
           ]),
           transition('* => void', [
-            animate(300, style({transform: 'translatey(-1000px) '}))
+            animate(400, 
+                style({transform: 'translatey(-94%) '}))
           ])
+        ]),
+        trigger('titleTextTrigger', [
+            state('in', style({ opacity: '1' })),
+            transition('void => *', [style({ opacity: '0' }),
+                animate('100ms 300ms')
+            ]),
+            transition('* => void', [
+                animate('100ms', style({ opacity: '1' }))
+            ])
         ])
     ]
 })
